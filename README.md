@@ -62,4 +62,4 @@ Example codes of udemy course Unit Testing for C# Developers
   - 3rd-party code
 
  # Test method structure
-  - ```[MethodName]_[Scenario]_[ExpectedBehaviour]```
+  - <pre>[MethodName]_[Scenario]_[ExpectedBehaviour]</pre>
