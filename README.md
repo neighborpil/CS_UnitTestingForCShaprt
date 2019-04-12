@@ -39,6 +39,7 @@ Example codes of udemy course Unit Testing for C# Developers
  - No logic, no conditional statments(if,else,foreach..)
  - Each test should be isolated
  - Not too specific/general
+ - Trustworthy : TDD
 
 # What to test
  - Test the outcome of a method
@@ -63,3 +64,14 @@ Example codes of udemy course Unit Testing for C# Developers
 
  # Test method structure
   - <pre>[MethodName]_[Scenario]_[ExpectedBehaviour]</pre>
+
+# Code coverage tools
+ - scans code and tells what parts are not tested
+ - Dot Cover(Reshaprer Ultimate)
+
+# Tips
+ - 만약 레거시 프로젝트를 수정해야한다고 하자. 테스트 케이스는 없다
+   이런 경우, 전체 프로젝트의 테스트 케이스를 작성하는 것은 얻는 이득에 비해
+   소비되는 수고가 더 크다.
+   따라서 핵시 로직만 테스트 케이스를 작성하는 것이 좋다. 새로운 기능을 추가
+   하더라도 핵심 기능이 동작하는 것을 보장하기 위해서이다
