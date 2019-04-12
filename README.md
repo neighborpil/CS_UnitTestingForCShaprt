@@ -28,3 +28,38 @@ Example codes of udemy course Unit Testing for C# Developers
   - Calculation
  2. Integration test
   - simply reads some data and writes it to a database
+
+# TDD fundamental
+ - Write a failing test
+ - Write the simplest code to make the test pass
+ - Refacor if necessary
+
+# Characteristics of Good Unit Tests
+ - Clean, readable and maintainable
+ - No logic, no conditional statments(if,else,foreach..)
+ - Each test should be isolated
+ - Not too specific/general
+
+# What to test
+ - Test the outcome of a method
+ - Functions are seperated to 2 types
+
+1. Query
+ - Return some values
+ - Should test and verify that function is returning the right value
+
+2. Command
+ - Performs an action, making a change in the system
+ - May return values
+ - Test outcome
+ - Ex1. changing the state of memory
+ - Ex2. Writing to a database
+ - Ex3. Calling web services
+ - Ex4. Sending a message que
+
+ # What not to test
+  - Language features(Don't test C# language features)
+  - 3rd-party code
+
+ # Test method structure
+  - ```[MethodName]_[Scenario]_[ExpectedBehaviour]```
