@@ -11,7 +11,7 @@
 
         public int PlaceOrder(Order order)
         {
-            var orderId = _storage.Store(order);
+            var orderId = _storage.Store(order); // 이줄 주석처리하면 
             
             // Some other work
 
