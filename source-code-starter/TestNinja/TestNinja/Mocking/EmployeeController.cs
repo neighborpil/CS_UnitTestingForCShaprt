@@ -4,18 +4,16 @@ namespace TestNinja.Mocking
 {
     public class EmployeeController
     {
-        private EmployeeContext _db;
+        private readonly IEmployeeStorage _storage;
 
-        public EmployeeController()
+        public EmployeeController(IEmployeeStorage storage)
         {
-            _db = new EmployeeContext();
+            _storage = storage;
         }
 
         public ActionResult DeleteEmployee(int id)
         {
-            var employee = _db.Employees.Find(id);
-            _db.Employees.Remove(employee);
-            _db.SaveChanges();
+            _storage.DeleteEmployee(id);
             return RedirectToAction("Employees");
         }
 
@@ -32,7 +30,7 @@ namespace TestNinja.Mocking
     public class EmployeeContext
     {
         public DbSet<Employee> Employees { get; set; }
-
+        
         public void SaveChanges()
         {
         }
@@ -41,4 +39,42 @@ namespace TestNinja.Mocking
     public class Employee
     {
     }
+
+    //public class EmployeeController
+    //{
+    //    private IDBCRUD dbcrud;
+
+    //    public EmployeeController(IDBCRUD dbcrud)
+    //    {
+    //        this.dbcrud = dbcrud;
+    //    }
+
+    //    public ActionResult DeleteEmployee(int id)
+    //    {
+    //        dbcrud.DeleteEmployee(id);
+    //        return RedirectToAction("Employees");
+    //    }
+
+    //    private ActionResult RedirectToAction(string employees)
+    //    {
+    //        return new RedirectResult();
+    //    }
+    //}
+
+    //public class ActionResult { }
+
+    //public class RedirectResult : ActionResult { }
+
+    //public class EmployeeContext
+    //{
+    //    public DbSet<Employee> Employees { get; set; }
+
+    //    public void SaveChanges()
+    //    {
+    //    }
+    //}
+
+    //public class Employee
+    //{
+    //}
 }

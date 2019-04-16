@@ -131,3 +131,6 @@ C:\codes\GitRepository\CS_UnitTestingForCShaprt\source-code-starter2\TestNinja\T
 C:\codes\GitRepository\CS_UnitTestingForCShaprt\source-code-starter2\TestNinja\TestNinja.UnitTests\bin\Debug\Moq.xml
 C:\codes\GitRepository\CS_UnitTestingForCShaprt\source-code-starter2\TestNinja\TestNinja.UnitTests\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\codes\GitRepository\CS_UnitTestingForCShaprt\source-code-starter2\TestNinja\TestNinja.UnitTests\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\codes\GitRepository\CS_UnitTestingForCShaprt\source-code-starter2\TestNinja\TestNinja.UnitTests\bin\Debug\TestNinja.UnitTests.dll.config
+C:\codes\GitRepository\CS_UnitTestingForCShaprt\source-code-starter2\TestNinja\TestNinja.UnitTests\bin\Debug\EntityFramework.SqlServer.dll
+C:\codes\GitRepository\CS_UnitTestingForCShaprt\source-code-starter2\TestNinja\TestNinja.UnitTests\bin\Debug\EntityFramework.SqlServer.xml
